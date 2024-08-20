@@ -6,7 +6,10 @@ public class HeartAttack : MonoBehaviour
     public float waitTime = 1.0f;
     public float minSpeed = 3.0f;
     public float maxSpeed = 7.0f;
-    public Color launchColor = new Color(1f, 0.2f, 0.6f); // Color configurable desde el inspector
+
+    public Color color1 = Color.red;   // Color configurable desde el inspector
+    public Color color2 = Color.blue;  // Color configurable desde el inspector
+    public Color color3 = Color.green; // Color configurable desde el inspector
 
     private float speed;
     private bool isLaunched = false;
@@ -65,7 +68,10 @@ public class HeartAttack : MonoBehaviour
 
             speed = Random.Range(minSpeed, maxSpeed);
 
-            spriteRenderer.color = launchColor; // Usar el color configurado desde el inspector
+            // Seleccionar un color aleatorio entre los configurados
+            Color[] colors = { color1, color2, color3 };
+            Color launchColor = colors[Random.Range(0, colors.Length)];
+            spriteRenderer.color = launchColor;
 
             isLaunched = true;
             audioSource.Play();

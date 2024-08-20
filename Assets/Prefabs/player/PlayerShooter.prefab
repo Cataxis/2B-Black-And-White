@@ -98,6 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e93a2bee4671cc2428c32059714e65fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  live: 0
+  explosion: {fileID: 6192724089161036641, guid: e17d9a3f04750764c8c0a7a0461e4c3b, type: 3}
   moveSpeed: 0.6
   bounds: 8
   bulletPrefab: {fileID: 8439656739102254726, guid: 47da24e52afee554e83939eba829e88c, type: 3}

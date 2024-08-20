@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
             Move();
         }
 
-        if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.Joystick1Button3))
+        if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.Joystick1Button6))
         {
             RestartScene();
         }

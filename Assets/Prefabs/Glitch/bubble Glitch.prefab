@@ -198,6 +198,7 @@ MonoBehaviour:
   colorFlashDuration: 0.1
   scaleChangeDuration: 0.1
   scaleFactor: 1.2
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!82 &1119870823788081728
 AudioSource:
   m_ObjectHideFlags: 0
@@ -306,4 +307,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13382a6abf7892047988fbbbd4fb412c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToDestroy: 10
+  timeToDestroy: 6

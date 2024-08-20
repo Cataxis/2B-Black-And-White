@@ -184,7 +184,7 @@ MonoBehaviour:
   - {fileID: 722358818568270853}
   - {fileID: 3389670610646454094}
   prefab: {fileID: 9081103312772287045, guid: bf28c6eea120b664ba6476a73046f109, type: 3}
-  prefabsToSpawn: 3
+  prefabsToSpawn: 5
   timeBetweenSpawns1: 0.4
   timeBetweenSpawns2: 0.2
 --- !u!82 &571587825491865788
@@ -197,7 +197,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3237a3759a2f603479402ea9435057e0, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ac91a5ed0f4afd140a69bd402b67fcf9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -295,7 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13382a6abf7892047988fbbbd4fb412c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToDestroy: 1.6
+  timeToDestroy: 1.4
 --- !u!1 &6265365934348800140
 GameObject:
   m_ObjectHideFlags: 0

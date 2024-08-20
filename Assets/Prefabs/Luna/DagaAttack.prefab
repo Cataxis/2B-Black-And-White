@@ -177,7 +177,9 @@ MonoBehaviour:
   waitTime: 0.4
   minSpeed: 20
   maxSpeed: 40
-  launchColor: {r: 1, g: 0.18007326, b: 0.1566037, a: 1}
+  color1: {r: 1, g: 0, b: 0, a: 1}
+  color2: {r: 1, g: 0, b: 0.014593124, a: 1}
+  color3: {r: 1, g: 0.09595464, b: 0, a: 1}
 --- !u!82 &5114495757407922392
 AudioSource:
   m_ObjectHideFlags: 0

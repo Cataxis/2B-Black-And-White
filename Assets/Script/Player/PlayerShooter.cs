@@ -1,10 +1,15 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerShooter : MonoBehaviour
 {
+    public static PlayerShooter Instance { get; private set; }
+
+    private void Awake() => Instance = this;
+
+    [SerializeField] private bool live;
+    [SerializeField] private GameObject explosion;
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float bounds = 4.5f;
     [SerializeField] private GameObject bulletPrefab;
@@ -12,6 +17,13 @@ public class PlayerShooter : MonoBehaviour
     [SerializeField] private float fireRate = 0.5f;
     private bool isPaused = false;
     private float nextFireTime = 0f;
+
+    private SpriteRenderer spriteRenderer;
+
+    private void Start()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
     void Update()
     {
@@ -34,6 +46,7 @@ public class PlayerShooter : MonoBehaviour
 
     private void Move()
     {
+        if (!live) return;
         float moveInput = Input.GetAxisRaw("Horizontal");
         Vector2 playerPosition = transform.position;
         float normalizedMoveSpeed = moveSpeed * Time.deltaTime * 60f;
@@ -44,7 +57,8 @@ public class PlayerShooter : MonoBehaviour
 
     private void Shoot()
     {
-        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Joystick1Button0)) || Input.GetKeyDown(KeyCode.Joystick1Button1)  && Time.time > nextFireTime)
+        if (!live) return;
+        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Joystick1Button0)) || Input.GetKeyDown(KeyCode.Joystick1Button1) && Time.time > nextFireTime)
         {
             nextFireTime = Time.time + fireRate;
             Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
@@ -63,4 +77,32 @@ public class PlayerShooter : MonoBehaviour
         Time.timeScale = isPaused ? 0f : 1f;
     }
 
+    public void DeadPlayer()
+    {
+        if (!live) return;
+
+        live = false;
+
+        // Change the color of the sprite to red
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.color = Color.red;
+        }
+
+        Instantiate(explosion, transform.position, Quaternion.identity);
+        StartCoroutine(ReloadScene());
+    }
+
+    IEnumerator ReloadScene()
+    {
+        // Reduce the time scale to create a slow-motion effect
+        Time.timeScale = 0.2f;
+        yield return new WaitForSecondsRealtime(1.5f);
+
+        // Reset the time scale back to normal
+        Time.timeScale = 1f;
+
+        // Reload the scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }

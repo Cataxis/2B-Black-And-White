@@ -10,6 +10,8 @@ public class BubbleLife : MonoBehaviour
     [SerializeField] private float colorFlashDuration = 0.1f;
     [SerializeField] private float scaleChangeDuration = 0.1f;
     [SerializeField] private float scaleFactor = 1.2f;
+    [SerializeField] private Color damageColor = Color.red; // Color configurable, por defecto rojo
+
     private AudioSource audioSource;
     private SpriteRenderer spriteRenderer;
     private Vector3 originalScale;
@@ -43,8 +45,8 @@ public class BubbleLife : MonoBehaviour
             audioSource.PlayOneShot(damageSound);
         }
 
-        // Tint to red and back to original color
-        spriteRenderer.DOColor(Color.red, colorFlashDuration).OnComplete(() =>
+        // Tint to damageColor and back to original color
+        spriteRenderer.DOColor(damageColor, colorFlashDuration).OnComplete(() =>
         {
             spriteRenderer.DOColor(originalColor, colorFlashDuration);
         });
@@ -54,5 +56,11 @@ public class BubbleLife : MonoBehaviour
         {
             transform.DOScale(originalScale, scaleChangeDuration);
         });
+    }
+
+    private void OnDestroy()
+    {
+        transform.DOKill();
+        spriteRenderer.DOKill();
     }
 }

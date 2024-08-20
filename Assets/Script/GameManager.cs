@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
-
     public int blocksLeft;
 
     private void Awake()
@@ -33,13 +32,29 @@ public class GameManager : MonoBehaviour
 
         if (blocksLeft <= 0)
         {
-            LoadNextLevel();
+            CompleteLevel();
         }
     }
 
-    private void LoadNextLevel()
+    private void CompleteLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+        // Desbloquear el siguiente nivel
+        int nextLevel = currentSceneIndex + 1;
+        UnlockNextLevel(currentSceneIndex);
+
+        // Cargar el siguiente nivel
+        SceneManager.LoadScene(nextLevel);
+    }
+
+    private void UnlockNextLevel(int levelIndex)
+    {
+        int levelReached = PlayerPrefs.GetInt("LevelReached", 1);
+        if (levelIndex >= levelReached)
+        {
+            PlayerPrefs.SetInt("LevelReached", levelIndex + 1);
+        }
     }
 
     public void ReloadNextLevel()
