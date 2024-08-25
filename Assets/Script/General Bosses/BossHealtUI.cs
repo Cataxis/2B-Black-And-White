@@ -12,6 +12,7 @@ public class BossHealthUI : MonoBehaviour
     {
         if (bossTarget != null && healthSlider != null)
         {
+            healthSlider.minValue = 0;
             healthSlider.maxValue = bossTarget.MaxHealth;
             healthSlider.value = bossTarget.Health;
         }
@@ -19,6 +20,7 @@ public class BossHealthUI : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(healthSlider.value);
         if (bossTarget != null && healthSlider != null)
         {
             healthSlider.value = bossTarget.Health;

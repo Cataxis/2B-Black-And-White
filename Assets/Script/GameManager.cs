@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,6 +5,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
     public int blocksLeft;
+
+    private string[] specialScenes = { "Bella", "Kira", "Luna" };
 
     private void Awake()
     {
@@ -38,27 +38,45 @@ public class GameManager : MonoBehaviour
 
     private void CompleteLevel()
     {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        int currentLevel = int.Parse(currentSceneName.Replace("Level", ""));
+        UnlockNextLevel(currentLevel);
 
-        // Desbloquear el siguiente nivel
-        int nextLevel = currentSceneIndex + 1;
-        UnlockNextLevel(currentSceneIndex);
+        // Cargar la escena especial si existe, o el siguiente nivel
+        string nextSceneName = GetNextSceneName(currentLevel);
 
-        // Cargar el siguiente nivel
-        SceneManager.LoadScene(nextLevel);
+        if (Application.CanStreamedLevelBeLoaded(nextSceneName))
+        {
+            SceneManager.LoadScene(nextSceneName);
+        }
+        else
+        {
+            // Manejar caso especial si no existe la siguiente escena, como créditos
+        }
     }
 
-    private void UnlockNextLevel(int levelIndex)
+    private void UnlockNextLevel(int currentLevel)
     {
         int levelReached = PlayerPrefs.GetInt("LevelReached", 1);
-        if (levelIndex >= levelReached)
+        if (currentLevel >= levelReached)
         {
-            PlayerPrefs.SetInt("LevelReached", levelIndex + 1);
+            PlayerPrefs.SetInt("LevelReached", currentLevel + 1);
         }
+    }
+
+    private string GetNextSceneName(int currentLevel)
+    {
+        // Revisar si el siguiente nivel tiene una escena especial asociada
+        if (currentLevel == 4) return "Bella";
+        if (currentLevel == 11) return "Kira";
+        if (currentLevel == 16) return "Luna";
+
+        // Si no hay escena especial, devolver el siguiente nivel
+        return "Level" + (currentLevel + 1);
     }
 
     public void ReloadNextLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

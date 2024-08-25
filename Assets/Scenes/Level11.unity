@@ -814,7 +814,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -2570,6 +2570,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 906815795}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2058336723
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3083262894048154628, guid: 2b4c95a82b1cb894fab0fdcca5a7bed3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3083262894048154628, guid: 2b4c95a82b1cb894fab0fdcca5a7bed3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3083262894048154628, guid: 2b4c95a82b1cb894fab0fdcca5a7bed3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3083262894048154628, guid: 2b4c95a82b1cb894fab0fdcca5a7bed3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3083262894048154628, guid: 2b4c95a82b1cb894fab0fdcca5a7bed3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3083262894048154628, guid: 2b4c95a82b1cb894fab0fdcca5a7bed3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3083262894048154628, guid: 2b4c95a82b1cb894fab0fdcca5a7bed3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3083262894048154628, guid: 2b4c95a82b1cb894fab0fdcca5a7bed3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3083262894048154628, guid: 2b4c95a82b1cb894fab0fdcca5a7bed3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3083262894048154628, guid: 2b4c95a82b1cb894fab0fdcca5a7bed3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4651622761178606949, guid: 2b4c95a82b1cb894fab0fdcca5a7bed3, type: 3}
+      propertyPath: m_Name
+      value: BG Music
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2b4c95a82b1cb894fab0fdcca5a7bed3, type: 3}
 --- !u!212 &2748239367787642
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3374,3 +3431,4 @@ SceneRoots:
   - {fileID: 906815795}
   - {fileID: 630186358}
   - {fileID: 318695870}
+  - {fileID: 2058336723}

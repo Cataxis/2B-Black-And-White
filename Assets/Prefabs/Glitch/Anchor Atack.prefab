@@ -296,7 +296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d501d82f107dd84797001d08ce92f9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 8
   damageSound: {fileID: 8300000, guid: 1cfc7d3edf9dbb14b829181c2d2779e0, type: 3}
   colorFlashDuration: 0.1
   scaleChangeDuration: 0.1
@@ -613,7 +613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d501d82f107dd84797001d08ce92f9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 8
   damageSound: {fileID: 8300000, guid: 1cfc7d3edf9dbb14b829181c2d2779e0, type: 3}
   colorFlashDuration: 0.1
   scaleChangeDuration: 0.1
@@ -930,7 +930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d501d82f107dd84797001d08ce92f9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 8
   damageSound: {fileID: 8300000, guid: 1cfc7d3edf9dbb14b829181c2d2779e0, type: 3}
   colorFlashDuration: 0.1
   scaleChangeDuration: 0.1
@@ -1299,7 +1299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d501d82f107dd84797001d08ce92f9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 8
   damageSound: {fileID: 8300000, guid: 1cfc7d3edf9dbb14b829181c2d2779e0, type: 3}
   colorFlashDuration: 0.1
   scaleChangeDuration: 0.1
@@ -1616,7 +1616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d501d82f107dd84797001d08ce92f9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 8
   damageSound: {fileID: 8300000, guid: 1cfc7d3edf9dbb14b829181c2d2779e0, type: 3}
   colorFlashDuration: 0.1
   scaleChangeDuration: 0.1
@@ -1933,7 +1933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d501d82f107dd84797001d08ce92f9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 8
   damageSound: {fileID: 8300000, guid: 1cfc7d3edf9dbb14b829181c2d2779e0, type: 3}
   colorFlashDuration: 0.1
   scaleChangeDuration: 0.1
@@ -2250,7 +2250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d501d82f107dd84797001d08ce92f9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 8
   damageSound: {fileID: 8300000, guid: 1cfc7d3edf9dbb14b829181c2d2779e0, type: 3}
   colorFlashDuration: 0.1
   scaleChangeDuration: 0.1

@@ -11,37 +11,24 @@ public class LevelSelector : MonoBehaviour
 
         //PlayerPrefs.DeleteAll();
 
-        int levelReached = PlayerPrefs.GetInt("LevelReached", 5); 
+        int levelReached = PlayerPrefs.GetInt("LevelReached", 1);
 
-        // Configura los botones basados en el progreso del jugador
         for (int i = 0; i < levelButtons.Length; i++)
         {
             if (i + 1 > levelReached)
             {
-                levelButtons[i].interactable = false; // Bloquea el botón si el nivel no está desbloqueado
+                levelButtons[i].interactable = false;
             }
             else
             {
-                int levelIndex = i + 1; // Variable para capturar el índice del nivel
-                levelButtons[i].onClick.AddListener(() => LoadLevel(levelIndex)); // Agrega el listener para cargar la escena
+                int levelIndex = i + 1;
+                levelButtons[i].onClick.AddListener(() => LoadLevel(levelIndex));
             }
         }
     }
 
-    // Método para cargar la escena del nivel seleccionado
     void LoadLevel(int levelIndex)
     {
-        SceneManager.LoadScene("Level" + levelIndex); // Carga la escena correspondiente (asegúrate de que las escenas sigan este patrón de nombres)
-    }
-
-    // Método para desbloquear el siguiente nivel, llamarlo al completar un nivel
-    public void UnlockNextLevel(int level)
-    {
-        int currentLevelReached = PlayerPrefs.GetInt("LevelReached", 1);
-
-        if (level >= currentLevelReached)
-        {
-            PlayerPrefs.SetInt("LevelReached", level + 1); // Desbloquea el siguiente nivel
-        }
+        SceneManager.LoadScene("Level" + levelIndex);
     }
 }

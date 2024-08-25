@@ -28,4 +28,14 @@ public class Escenes : MonoBehaviour
     {
         SceneManager.LoadScene(creditsSceneName);
     }
+
+    public void LoadControls()
+    {
+        SceneManager.LoadScene("Controls");
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }

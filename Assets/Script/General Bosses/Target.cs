@@ -21,13 +21,17 @@ public class Target : MonoBehaviour
     public int Health => health;
     public int MaxHealth => maxHealth;
 
+    private void Awake()
+    {
+        maxHealth = health;
+    }
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalScale = transform.localScale;
         originalColor = spriteRenderer.color;
-        maxHealth = health;
     }
 
     public void TakeDamage(int damage)
@@ -95,22 +99,27 @@ public class Target : MonoBehaviour
 
     private void CompleteLevel()
     {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        int currentLevel = int.Parse(currentSceneName.Replace("Level", ""));
+        UnlockNextLevel(currentLevel);
 
-        // Desbloquear el siguiente nivel
-        int nextLevel = currentSceneIndex + 1;
-        UnlockNextLevel(currentSceneIndex);
-
-        // Cargar el siguiente nivel
-        SceneManager.LoadScene(nextLevel);
+        string nextSceneName = "Level" + (currentLevel + 1);
+        if (Application.CanStreamedLevelBeLoaded(nextSceneName))
+        {
+            SceneManager.LoadScene(nextSceneName);
+        }
+        else
+        {
+            // Manejar la transición a la siguiente escena específica (animación de jefes, créditos, etc.)
+        }
     }
 
-    private void UnlockNextLevel(int levelIndex)
+    private void UnlockNextLevel(int currentLevel)
     {
         int levelReached = PlayerPrefs.GetInt("LevelReached", 1);
-        if (levelIndex >= levelReached)
+        if (currentLevel >= levelReached)
         {
-            PlayerPrefs.SetInt("LevelReached", levelIndex);
+            PlayerPrefs.SetInt("LevelReached", currentLevel + 1);
         }
     }
 
@@ -145,5 +154,11 @@ public class Target : MonoBehaviour
                 Destroy(source);
             }
         }
+    }
+
+    private void OnDestroy()
+    {
+        transform.DOKill();
+        spriteRenderer.DOKill();
     }
 }

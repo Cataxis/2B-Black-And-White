@@ -17,6 +17,7 @@ public class PlayerShooter : MonoBehaviour
     [SerializeField] private float fireRate = 0.5f;
     private bool isPaused = false;
     private float nextFireTime = 0f;
+    [SerializeField] AudioSource MusicBG;
 
     private SpriteRenderer spriteRenderer;
 
@@ -79,6 +80,9 @@ public class PlayerShooter : MonoBehaviour
 
     public void DeadPlayer()
     {
+
+        MusicBG.Stop();
+
         if (!live) return;
 
         live = false;
