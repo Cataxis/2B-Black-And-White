@@ -22,7 +22,7 @@ PlayerSettings:
   m_SplashScreenOverlayOpacity: 1
   m_SplashScreenAnimation: 1
   m_SplashScreenLogoStyle: 1
-  m_SplashScreenDrawMode: 0
+  m_SplashScreenDrawMode: 1
   m_SplashScreenBackgroundAnimationZoom: 1
   m_SplashScreenLogoAnimationZoom: 1
   m_SplashScreenBackgroundLandscapeAspect: 1
@@ -40,9 +40,13 @@ PlayerSettings:
     width: 1
     height: 1
   m_SplashScreenLogos:
-  - logo: {fileID: 21300000, guid: 0e370c08311a4e24c8a5084e8de59eee, type: 3}
+  - logo: {fileID: 10404, guid: 0000000000000000f000000000000000, type: 0}
     duration: 2
-  m_VirtualRealitySplashScreen: {fileID: 2800000, guid: dc57ff625e3d734468b6a72014841e94, type: 3}
+  - logo: {fileID: 21300000, guid: a77e57370798bc941a0080c0ea012cef, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: 377b8531552c9384ba854ef2bc16b44c, type: 3}
+    duration: 2
+  m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1920
   defaultScreenHeight: 1080
@@ -94,7 +98,7 @@ PlayerSettings:
   bakeCollisionMeshes: 0
   forceSingleInstance: 0
   useFlipModelSwapchain: 1
-  resizableWindow: 0
+  resizableWindow: 1
   useMacAppStoreValidation: 0
   macAppStoreCategory: public.app-category.games
   gpuSkinning: 0
@@ -141,7 +145,7 @@ PlayerSettings:
   loadStoreDebugModeEnabled: 0
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
-  bundleVersion: BetaUno
+  bundleVersion: Demo
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -290,7 +294,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 0}
+      m_Icon: {fileID: 2800000, guid: c9004d6594faa624f9570cffcbffd562, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0

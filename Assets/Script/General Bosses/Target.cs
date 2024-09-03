@@ -110,7 +110,7 @@ public class Target : MonoBehaviour
         }
         else
         {
-            // Manejar la transición a la siguiente escena específica (animación de jefes, créditos, etc.)
+
         }
     }
 
