@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6374169611436883502}
+  - component: {fileID: 7432826881109530058}
   m_Layer: 0
   m_Name: Besito Largo
   m_TagString: Untagged
@@ -32,6 +33,19 @@ Transform:
   - {fileID: 7809210154850863465}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7432826881109530058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144084981472291912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13382a6abf7892047988fbbbd4fb412c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToDestroy: 3
 --- !u!1 &1782722489813470167
 GameObject:
   m_ObjectHideFlags: 0
@@ -113,10 +127,10 @@ MonoBehaviour:
   warningPrefab: {fileID: 4331010659783347498, guid: 54b653a50be024248a80b6f782dc7751, type: 3}
   leftSpawnPoint: {fileID: 6073151526938502873}
   rightSpawnPoint: {fileID: 5873865289190207771}
-  minMoveSpeed: 10
+  minMoveSpeed: 8
   maxMoveSpeed: 20
   laserDuration: 1.4
-  warningDuration: 0.6
+  warningDuration: 1.6
 --- !u!1 &8216288072078197724
 GameObject:
   m_ObjectHideFlags: 0

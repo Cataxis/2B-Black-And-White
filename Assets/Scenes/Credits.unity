@@ -329,8 +329,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -600}
-  m_SizeDelta: {x: 1800, y: 1600}
+  m_AnchoredPosition: {x: 24.281, y: -1505.8}
+  m_SizeDelta: {x: 1870, y: 4111.501}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1011282186
 MonoBehaviour:
@@ -352,15 +352,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Game by: Victoria \u201CCataxis\u201D P\xE9rez\nArt: Death Voice & Quetzalcoutl    
-    \r\nSoundtrack: LosthinK\n\n\nTesters\nEvangelo Ruiz\r\nCeleste \u201CLevalotte\u201D
-    Uribe\r\nJuanGdev\r\nkaydev\r\nDiego A. G\xF3mez\r\nBryan Hern\xE1ndez Cabrera
-    \r\nIlce S Perez C\r\nLalo Rej\xF3n\r\nEduardo Emmanuel Barba Aldana \r\nEliana
-    Ricci\n\n\nSpecial Thanks\r\nOriana Luj\xE1n P\xE9rez Bauer, Diana \"Kodashi\"
-    Rodr\xEDguez, Ale Meza, Miriam Amaro, Dazia Pineda, Sandra Castro Pinz\xF3n,
-    Antonio \"Fayer\" Uribe, Roberto Picazo, H\xE9ctor Guerrero, Steve Dur\xE1n,
-    Luisquid, Pogo, Erika Vinay, Diego Nach\xF3n, J.D. Daltair, Gabriel \"Champ\"
-    Casillas, Jacobo Casta\xF1eda, //TodoGame Dev, INDI-ES, DevsVJ MX & Platzi. \r\n"
+  m_text: "GAME BY\r\nVictoria \u201CCataxis\u201D P\xE9rez    \r\n  \r\nSOUNDTRACK\r\nLosthinK 
+    \r\n\r\nART\r\nCamila Deloris\r\nDeathvoice\r\nQuetzalcoutlDev\r\n\r\nTESTING\r\nBryan
+    Hern\xE1ndez Cabrera\r\nCeleste \u201CLevalotte\u201D Uribe\r\nDiego A. G\xF3mez\r\nEduardo
+    Emmanuel Barba Aldana\r\nEliana Ricci\r\nEvangelo Ruiz\r\nIlce S Perez C\r\nJuanGdev\r\nKaydev\r\nLalo
+    Rej\xF3n\r\n\r\nSpecial Thanks from Camila Deloris\r\nMi mam\xE1 Lolita\r\n\r\nSpecial
+    Thanks from Deathvoide\r\nWomen In Gamex\r\nA mi aguelito\r\n\r\nSpecial Thanks
+    from Cataxis\r\nMy eternal love, Oriana Luj\xE1n P\xE9rez Bauer\r\nWomen In Gamex\r\nSandra
+    Castro Pinz\xF3n\r\nAntonio \u201CFayer\u201D Uribe\r\nRoberto Picazo\r\nDiego
+    Nach\xF3n\r\nJaqueline S\xE1nchez\r\nEduardo Becerril\r\nH\xE9ctor Guerrero\r\nJ.D.
+    Daltair\r\nGabriel \u201CChamp\u201D Casillas\r\nJacobo Casta\xF1eda\r\nSteve
+    Dur\xE1n\r\nLuisquid\r\nIndierama\r\nErika Vinay\r\nPogo\r\n&\r\n//TodoGame Dev\r\nINDI-ES\r\nDevsVJ
+    MX \r\nPlatzi\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3e1a19d1ab8cbf14a853747df9ed324b, type: 2}
   m_sharedMaterial: {fileID: -1904507303881386084, guid: 3e1a19d1ab8cbf14a853747df9ed324b, type: 2}

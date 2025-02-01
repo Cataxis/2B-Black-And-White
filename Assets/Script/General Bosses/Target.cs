@@ -12,6 +12,8 @@ public class Target : MonoBehaviour
     [SerializeField] private float scaleFactor = 1.2f;
     [SerializeField] private float fadeOutDuration = 0.5f;
     [SerializeField] private GameObject fade;
+    [SerializeField] private string nextSceneName; // Nombre de la escena a cargar
+
     private AudioSource audioSource;
     private SpriteRenderer spriteRenderer;
     private Vector3 originalScale;
@@ -94,32 +96,27 @@ public class Target : MonoBehaviour
         DOTween.Kill(spriteRenderer);
         Destroy(gameObject);
 
-        CompleteLevel();
+        UnlockNextLevel();
+        LoadCustomScene();
     }
 
-    private void CompleteLevel()
+    private void UnlockNextLevel()
     {
         string currentSceneName = SceneManager.GetActiveScene().name;
         int currentLevel = int.Parse(currentSceneName.Replace("Level", ""));
-        UnlockNextLevel(currentLevel);
-
-        string nextSceneName = "Level" + (currentLevel + 1);
-        if (Application.CanStreamedLevelBeLoaded(nextSceneName))
-        {
-            SceneManager.LoadScene(nextSceneName);
-        }
-        else
-        {
-
-        }
-    }
-
-    private void UnlockNextLevel(int currentLevel)
-    {
         int levelReached = PlayerPrefs.GetInt("LevelReached", 1);
+
         if (currentLevel >= levelReached)
         {
             PlayerPrefs.SetInt("LevelReached", currentLevel + 1);
+        }
+    }
+
+    private void LoadCustomScene()
+    {
+        if (!string.IsNullOrEmpty(nextSceneName) && Application.CanStreamedLevelBeLoaded(nextSceneName))
+        {
+            SceneManager.LoadScene(nextSceneName);
         }
     }
 

@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 8b011ec9a0d4cc441a0c9667ea64945f
   - enabled: 1
-    path: Assets/Scenes/Levels.unity
-    guid: 83765ca0eaac83240bc6b6d4733882f2
-  - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 2bf2bb8722fb12348b2db5297351de4e
   - enabled: 1
@@ -31,48 +28,42 @@ EditorBuildSettings:
     guid: be23983337eb7fc469185107b995d878
   - enabled: 1
     path: Assets/Scenes/Level6.unity
-    guid: de3af18a548dea14283da88a81e4dd23
-  - enabled: 1
-    path: Assets/Scenes/Level7.unity
-    guid: f0421c74207fae641a1152afafaa3451
-  - enabled: 1
-    path: Assets/Scenes/Level8.unity
     guid: f30b6127d84e7b640afe3d8690b81ff4
   - enabled: 1
-    path: Assets/Scenes/Level9.unity
+    path: Assets/Scenes/Level7.unity
     guid: f7cdaad38fae90e44b4d37922fd2b490
   - enabled: 1
-    path: Assets/Scenes/Level10.unity
+    path: Assets/Scenes/Level8.unity
     guid: a5d32fd20aa279c449fd7f903aecbcc9
   - enabled: 1
-    path: Assets/Scenes/Level11.unity
+    path: Assets/Scenes/Level9.unity
     guid: 679d79f9823250d4da6bd4b4a14163e0
   - enabled: 1
     path: Assets/Scenes/Kira.unity
     guid: 37315e59e2e434b45a1e6c164da2f9ca
   - enabled: 1
-    path: Assets/Scenes/Level12.unity
+    path: Assets/Scenes/Level10.unity
     guid: e25d275482563b04ea467a7dc2d59382
   - enabled: 1
-    path: Assets/Scenes/Level13.unity
+    path: Assets/Scenes/Level11.unity
     guid: f777c91d69be31f41adaa75ae3d28d99
   - enabled: 1
-    path: Assets/Scenes/Level14.unity
+    path: Assets/Scenes/Level12.unity
     guid: 11d4c42fb29454843a0d0cc7a1e5b2ba
   - enabled: 1
-    path: Assets/Scenes/Level15.unity
+    path: Assets/Scenes/Level13.unity
     guid: 284267f3713b52246b1eb0d184b5388a
   - enabled: 1
-    path: Assets/Scenes/Level16.unity
+    path: Assets/Scenes/Level14.unity
     guid: a9cbaed7ac1f51b46b317f35c8cbdc55
   - enabled: 1
     path: Assets/Scenes/Luna.unity
     guid: f89343ad214fd1a439ecbe778a1b866d
   - enabled: 1
-    path: Assets/Scenes/Level17.unity
+    path: Assets/Scenes/Level15.unity
     guid: 878f520e5056a8c4ca133c0ccaf0c50b
   - enabled: 1
-    path: Assets/Scenes/Level18.unity
+    path: Assets/Scenes/Level16.unity
     guid: 64a33bd4f34283d44b7506a7e20b9390
   - enabled: 1
     path: Assets/Scenes/Credits.unity
@@ -80,4 +71,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Controls.unity
     guid: c086c2bb1129c5a4cbb897e44f7485e5
+  - enabled: 1
+    path: Assets/Scenes/Levels.unity
+    guid: 83765ca0eaac83240bc6b6d4733882f2
+  - enabled: 1
+    path: Assets/Scenes/BellaDeath.unity
+    guid: c8b25085caed4764ea53c0653a2ca2a0
+  - enabled: 1
+    path: Assets/Scenes/KiraDeath.unity
+    guid: 6462669b83e394d4891bfb51f2306c2f
+  - enabled: 1
+    path: Assets/Scenes/LunaDeath.unity
+    guid: 28d6f0f67e1d59c4294dd71db8713e01
   m_configObjects: {}

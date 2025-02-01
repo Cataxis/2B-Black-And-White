@@ -68,8 +68,8 @@ public class GameManager : MonoBehaviour
     {
         // Revisar si el siguiente nivel tiene una escena especial asociada
         if (currentLevel == 4) return "Bella";
-        if (currentLevel == 11) return "Kira";
-        if (currentLevel == 16) return "Luna";
+        if (currentLevel == 9) return "Kira";
+        if (currentLevel == 14) return "Luna";
 
         // Si no hay escena especial, devolver el siguiente nivel
         return "Level" + (currentLevel + 1);
