@@ -184,7 +184,7 @@ MonoBehaviour:
   - {fileID: 5730952869009534941}
   - {fileID: 5801768898107532440}
   - {fileID: 1248280289148555737}
-  prefab: {fileID: 505659802233442857, guid: d45ba39804cd55341848211f2b3736d8, type: 3}
+  prefab: {fileID: 505659802233442857, guid: c67201630de9e3a46a0123fa27a00db9, type: 3}
   prefabsToSpawn: 5
   timeBetweenSpawns1: 0.2
   timeBetweenSpawns2: 0.4

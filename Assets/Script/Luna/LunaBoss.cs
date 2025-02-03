@@ -24,17 +24,11 @@ public class LunaBoss : MonoBehaviour
     public float slowMotionScale = 0.5f;
     public float slowMotionDuration = 0.5f;
 
-    public Sprite spriteAtHalfHealth;  // Sprite para la salud a la mitad
-    public Sprite spriteAtOneThirdHealth; // Sprite para la salud a un tercio
-    private SpriteRenderer spriteRenderer;
-
     private float currentInterval;
     private int lastAttackIndex = -1;
     private bool isEnraged = false;
-    [SerializeField] private Target target;
+    [SerializeField] private TargetLuna target;
     private AudioSource audioSource;
-    private bool hasChangedToHalfSprite = false;
-    private bool hasChangedToOneThirdSprite = false;
 
     void Start()
     {
@@ -42,7 +36,6 @@ public class LunaBoss : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = normalMusic;
         audioSource.Play();
-        spriteRenderer = GetComponent<SpriteRenderer>();  // Inicializamos el SpriteRenderer
         StartCoroutine(ManageAttacks());
     }
 
@@ -55,20 +48,6 @@ public class LunaBoss : MonoBehaviour
     {
         if (target != null)
         {
-            // Cambiar el sprite cuando la salud del target esté a la mitad
-            if (target.Health <= target.MaxHealth / 2 && !hasChangedToHalfSprite)
-            {
-                ChangeSprite(spriteAtHalfHealth);
-                hasChangedToHalfSprite = true;
-            }
-
-            // Cambiar el sprite cuando la salud del target esté a un tercio
-            if (target.Health <= target.MaxHealth / 3 && !hasChangedToOneThirdSprite)
-            {
-                ChangeSprite(spriteAtOneThirdHealth);
-                hasChangedToOneThirdSprite = true;
-            }
-
             // Activar el estado de 'enfurecido' cuando la salud llegue a la mitad
             if (target.Health <= target.MaxHealth / 2 && !isEnraged)
             {
@@ -77,14 +56,6 @@ public class LunaBoss : MonoBehaviour
                 currentInterval = enragedInitialInterval;
                 StartCoroutine(ApplySlowMotion());
             }
-        }
-    }
-
-    void ChangeSprite(Sprite newSprite)
-    {
-        if (spriteRenderer != null && newSprite != null)
-        {
-            spriteRenderer.sprite = newSprite;
         }
     }
 

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Shield : MonoBehaviour
 {
-    [SerializeField] private Target target; // Asigna el Target desde el Inspector
+    [SerializeField] private TargetLuna target; // Asigna el Target desde el Inspector
     [SerializeField] private GameObject shieldObject; // Asigna el GameObject del escudo desde el Inspector
 
     void Start()

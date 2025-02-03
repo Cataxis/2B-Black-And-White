@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6618191811308592298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7658912146110201819}
+  - component: {fileID: 3838953027625418430}
+  m_Layer: 0
+  m_Name: Sub Attacks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7658912146110201819
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6618191811308592298}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3838953027625418430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6618191811308592298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96a666758e09e5b4e8c0b9c8381766c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attacks:
+  - prefab: {fileID: 7628055579328663313, guid: e5ce31356a749cd4494d2e05c647f7a5, type: 3}
+    duration: 8
+    direction: {x: 0, y: 0, z: 0}
+  - prefab: {fileID: 4532144915205999211, guid: 7c72765df66e8ac43a62419bb3655d0b, type: 3}
+    duration: 6.4
+    direction: {x: 0, y: 0, z: 0}
+  - prefab: {fileID: 8162098371111189040, guid: f1bc68bb4dc26274c8d9dcfd73941912, type: 3}
+    duration: 4
+    direction: {x: 6, y: 0, z: 0}
+  - prefab: {fileID: 8162098371111189040, guid: f1bc68bb4dc26274c8d9dcfd73941912, type: 3}
+    duration: 4
+    direction: {x: 6, y: 0, z: 0}
+  - prefab: {fileID: 8162098371111189040, guid: f1bc68bb4dc26274c8d9dcfd73941912, type: 3}
+    duration: 4
+    direction: {x: 6, y: 0, z: 0}
+  initialInterval: 10
+  intervalDecrement: 0.1
+  minimumInterval: 1

@@ -122,6 +122,52 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &916682273
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 916682275}
+  - component: {fileID: 916682274}
+  m_Layer: 0
+  m_Name: Wait Attacks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &916682274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916682273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e05c33cb52e60384289b00de4491c50f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1063600559134418944}
+  delay: 1
+--- !u!4 &916682275
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916682273}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1258615391
 Rigidbody2D:
   serializedVersion: 4
@@ -809,6 +855,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BossBellaManagerAttacks
       objectReference: {fileID: 0}
+    - target: {fileID: 4891544465159051757, guid: b2f87f4ac840d704e906d5830a12c341, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6004690141062956692, guid: b2f87f4ac840d704e906d5830a12c341, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -854,6 +904,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2f87f4ac840d704e906d5830a12c341, type: 3}
+--- !u!1 &1063600559134418944 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4891544465159051757, guid: b2f87f4ac840d704e906d5830a12c341, type: 3}
+  m_PrefabInstance: {fileID: 1063600559134418943}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1475536649356053270
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1835,3 +1890,4 @@ SceneRoots:
   - {fileID: 8789748075677490122}
   - {fileID: 1063600559134418943}
   - {fileID: 1839210341}
+  - {fileID: 916682275}

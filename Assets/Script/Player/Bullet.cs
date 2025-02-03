@@ -32,6 +32,7 @@ public class Bullet : MonoBehaviour
         {
             target.TakeDamage(damage);
             Destroy(gameObject);
+            return;
         }
 
         BubbleLife bubble = collision.GetComponent<BubbleLife>();
@@ -39,9 +40,17 @@ public class Bullet : MonoBehaviour
         {
             bubble.TakeDamage(damage);
             Destroy(gameObject);
+            return;
         }
 
-
+        // Nueva detección para TargetLuna
+        TargetLuna targetLuna = collision.GetComponent<TargetLuna>();
+        if (targetLuna != null)
+        {
+            targetLuna.TakeDamage(damage);
+            Destroy(gameObject);
+            return;
+        }
     }
 
     private void PlayShotSound()
