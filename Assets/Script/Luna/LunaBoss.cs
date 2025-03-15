@@ -20,6 +20,8 @@ public class LunaBoss : MonoBehaviour
     public float minimumInterval = 1f;
     public AudioClip normalMusic;
     public AudioClip enragedMusic;
+    public float normalMusicVolume = 1f;
+    public float enragedMusicVolume = 1f;
     public float musicTransitionDuration = 1f;
     public float slowMotionScale = 0.5f;
     public float slowMotionDuration = 0.5f;
@@ -35,6 +37,7 @@ public class LunaBoss : MonoBehaviour
         currentInterval = initialInterval;
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = normalMusic;
+        audioSource.volume = normalMusicVolume;
         audioSource.Play();
         StartCoroutine(ManageAttacks());
     }
@@ -48,23 +51,23 @@ public class LunaBoss : MonoBehaviour
     {
         if (target != null)
         {
-            // Activar el estado de 'enfurecido' cuando la salud llegue a la mitad
             if (target.Health <= target.MaxHealth / 2 && !isEnraged)
             {
                 isEnraged = true;
-                StartCoroutine(ChangeMusic(enragedMusic));
+                StartCoroutine(ChangeMusic(enragedMusic, enragedMusicVolume));
                 currentInterval = enragedInitialInterval;
                 StartCoroutine(ApplySlowMotion());
             }
         }
     }
 
-    IEnumerator ChangeMusic(AudioClip newMusic)
+    IEnumerator ChangeMusic(AudioClip newMusic, float newVolume)
     {
         float currentTime = 0;
+        float initialVolume = audioSource.volume;
         while (currentTime < musicTransitionDuration)
         {
-            audioSource.volume = Mathf.Lerp(1f, 0f, currentTime / musicTransitionDuration);
+            audioSource.volume = Mathf.Lerp(initialVolume, 0f, currentTime / musicTransitionDuration);
             currentTime += Time.deltaTime;
             yield return null;
         }
@@ -73,7 +76,7 @@ public class LunaBoss : MonoBehaviour
         currentTime = 0;
         while (currentTime < musicTransitionDuration)
         {
-            audioSource.volume = Mathf.Lerp(0f, 1f, currentTime / musicTransitionDuration);
+            audioSource.volume = Mathf.Lerp(0f, newVolume, currentTime / musicTransitionDuration);
             currentTime += Time.deltaTime;
             yield return null;
         }

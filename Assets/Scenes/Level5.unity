@@ -690,7 +690,6 @@ MonoBehaviour:
   bulletPrefab: {fileID: 8439656739102254726, guid: 47da24e52afee554e83939eba829e88c, type: 3}
   bulletSpawnPoint: {fileID: 700485065273143977}
   fireRate: 0.08
-  MusicBG: {fileID: 2571440153041369127}
 --- !u!1 &208559032085218136
 GameObject:
   m_ObjectHideFlags: 0
@@ -1100,6 +1099,7 @@ GameObject:
   - component: {fileID: 1740116588298026206}
   - component: {fileID: 2571440153041369122}
   - component: {fileID: 2571440153041369127}
+  - component: {fileID: 6928926563545289985}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1530,6 +1530,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6928926563545289985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2343487249980365703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eb49584f04bb27478b085307440352d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &6933209942809218625
 SpriteRenderer:
   m_ObjectHideFlags: 0
