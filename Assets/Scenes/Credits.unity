@@ -307,7 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce89b507196fac347808a72d3b64a1af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 60
+  delay: 84
   sceneName: MainMenu
 --- !u!1 &849853347
 GameObject:
@@ -1238,11 +1238,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5e7d2b97a1afb0142af42636409e10ed, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 00909a05c62a75149a2722eb9bc3a4d3, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1534,7 +1534,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4671191744043198141, guid: f0e1156b0b35cb74da4f60e088dc194b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8097321932497870093, guid: f0e1156b0b35cb74da4f60e088dc194b, type: 3}
       propertyPath: m_Pivot.x
