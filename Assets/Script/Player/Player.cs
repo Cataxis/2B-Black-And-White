@@ -2,15 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float bounds = 4.5f;
+    [SerializeField] private TextMeshProUGUI pauseText;
     private bool isPaused = false;
+
+    void Start()
+    {
+        if (pauseText != null)
+        {
+            pauseText.gameObject.SetActive(false);
+        }
+        Time.timeScale = 1f;
+    }
 
     void Update()
     {
+        CheckWindowFocus();
+
         if (!isPaused)
         {
             Move();
@@ -24,6 +37,11 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Joystick1Button7))
         {
             TogglePauseGame();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ReturnToMainMenu();
         }
     }
 
@@ -46,5 +64,29 @@ public class Player : MonoBehaviour
     {
         isPaused = !isPaused;
         Time.timeScale = isPaused ? 0f : 1f;
+
+        if (pauseText != null)
+        {
+            pauseText.gameObject.SetActive(isPaused);
+        }
+    }
+
+    private void ReturnToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    private void CheckWindowFocus()
+    {
+        if (!Application.isFocused)
+        {
+            isPaused = true;
+            Time.timeScale = 0f;
+
+            if (pauseText != null)
+            {
+                pauseText.gameObject.SetActive(true);
+            }
+        }
     }
 }

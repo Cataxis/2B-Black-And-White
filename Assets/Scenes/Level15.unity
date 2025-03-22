@@ -238,6 +238,7 @@ GameObject:
   m_Component:
   - component: {fileID: 323998017}
   - component: {fileID: 323998016}
+  - component: {fileID: 323998018}
   m_Layer: 0
   m_Name: Camera Shake (3)
   m_TagString: Untagged
@@ -275,6 +276,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5175875551082244807}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &323998018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323998015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3677772bf52222489ef767f8e242fe8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intensity: 0.5
+  duration: 1
 --- !u!1 &541286410
 GameObject:
   m_ObjectHideFlags: 0
@@ -5409,6 +5424,7 @@ GameObject:
   m_Component:
   - component: {fileID: 876361962}
   - component: {fileID: 876361961}
+  - component: {fileID: 876361963}
   m_Layer: 0
   m_Name: Camera Shake (7)
   m_TagString: Untagged
@@ -5446,6 +5462,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5175875551082244807}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &876361963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876361960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3677772bf52222489ef767f8e242fe8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intensity: 0.5
+  duration: 1
 --- !u!1 &899917307
 GameObject:
   m_ObjectHideFlags: 0
@@ -5562,6 +5592,7 @@ GameObject:
   m_Component:
   - component: {fileID: 939171805}
   - component: {fileID: 939171804}
+  - component: {fileID: 939171806}
   m_Layer: 0
   m_Name: Camera Shake (2)
   m_TagString: Untagged
@@ -5599,6 +5630,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5175875551082244807}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &939171806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939171803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3677772bf52222489ef767f8e242fe8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intensity: 0.5
+  duration: 1
 --- !u!1 &1045058458 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5084515458361403916, guid: 0caed1f5955851440a159256349b2847, type: 3}
@@ -5614,6 +5659,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1180785253}
   - component: {fileID: 1180785252}
+  - component: {fileID: 1180785254}
   m_Layer: 0
   m_Name: Camera Shake (4)
   m_TagString: Untagged
@@ -5651,6 +5697,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5175875551082244807}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1180785254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180785251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3677772bf52222489ef767f8e242fe8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intensity: 0.5
+  duration: 1
 --- !u!1 &1234334702
 GameObject:
   m_ObjectHideFlags: 0
@@ -5661,6 +5721,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1234334704}
   - component: {fileID: 1234334703}
+  - component: {fileID: 1234334705}
   m_Layer: 0
   m_Name: Camera Shake (5)
   m_TagString: Untagged
@@ -5698,6 +5759,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5175875551082244807}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1234334705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234334702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3677772bf52222489ef767f8e242fe8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intensity: 0.5
+  duration: 1
 --- !u!50 &1258615391
 Rigidbody2D:
   serializedVersion: 4
@@ -5735,6 +5810,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1308136157}
   - component: {fileID: 1308136156}
+  - component: {fileID: 1308136158}
   m_Layer: 0
   m_Name: Camera Shake
   m_TagString: Untagged
@@ -5772,6 +5848,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5175875551082244807}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1308136158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308136155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3677772bf52222489ef767f8e242fe8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intensity: 0.5
+  duration: 1
 --- !u!1 &1349352094
 GameObject:
   m_ObjectHideFlags: 0
@@ -6265,6 +6355,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1840089035}
   - component: {fileID: 1840089034}
+  - component: {fileID: 1840089036}
   m_Layer: 0
   m_Name: Camera Shake (1)
   m_TagString: Untagged
@@ -6302,6 +6393,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5175875551082244807}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1840089036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840089033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3677772bf52222489ef767f8e242fe8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intensity: 0.5
+  duration: 1
 --- !u!1 &1859030386
 GameObject:
   m_ObjectHideFlags: 0
@@ -6363,6 +6468,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2063322434}
   - component: {fileID: 2063322433}
+  - component: {fileID: 2063322435}
   m_Layer: 0
   m_Name: Camera Shake (6)
   m_TagString: Untagged
@@ -6400,6 +6506,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5175875551082244807}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2063322435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063322432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3677772bf52222489ef767f8e242fe8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intensity: 0.5
+  duration: 1
 --- !u!1 &2133136755
 GameObject:
   m_ObjectHideFlags: 0

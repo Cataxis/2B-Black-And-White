@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7432826881109530058}
   - component: {fileID: 8855351047077330025}
   - component: {fileID: 5331904248576312216}
+  - component: {fileID: 1137359094733973423}
   m_Layer: 0
   m_Name: Besito Largo
   m_TagString: Untagged
@@ -160,6 +161,20 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7a222638fce8c764f98741f13e5643a6, type: 3}
   - {fileID: 8300000, guid: d99b29c7c1dc48f4998f73bdabf32328, type: 3}
   - {fileID: 8300000, guid: 7a222638fce8c764f98741f13e5643a6, type: 3}
+--- !u!114 &1137359094733973423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144084981472291912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3677772bf52222489ef767f8e242fe8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intensity: 0.5
+  duration: 1.6
 --- !u!1 &1782722489813470167
 GameObject:
   m_ObjectHideFlags: 0
