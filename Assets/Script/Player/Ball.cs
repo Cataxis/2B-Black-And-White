@@ -26,11 +26,17 @@ public class Ball : MonoBehaviour
 
     void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Joystick1Button0)) || Input.GetKeyDown(KeyCode.Joystick1Button1) && !isBallMoving)
+        if ((Input.GetKeyDown(KeyCode.Space) ||
+             Input.GetMouseButtonDown(0) ||
+             Input.GetMouseButtonDown(1) ||
+             Input.GetKeyDown(KeyCode.Joystick1Button0) ||
+             Input.GetKeyDown(KeyCode.Joystick1Button1)) &&
+             !isBallMoving)
         {
             Launch();
         }
     }
+
 
     private void Launch()
     {

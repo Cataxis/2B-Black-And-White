@@ -377,8 +377,8 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_VertexColorAlwaysGammaSpace: 1
+  m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -701,6 +701,7 @@ GameObject:
   - component: {fileID: 518964429202188682}
   - component: {fileID: 1865585132651665638}
   - component: {fileID: 725521336620584884}
+  - component: {fileID: 1865585132651665639}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -761,6 +762,7 @@ MonoBehaviour:
   healthSlider: {fileID: 1865585132651665638}
   offset: {x: 0, y: 2, z: 0}
   bossTransform: {fileID: 2915799489485717276}
+  canvasGroup: {fileID: 1865585132651665639}
 --- !u!224 &726925481799586933
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1055,6 +1057,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!225 &1865585132651665639
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208559032085218136}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!114 &2223048369537905001
 MonoBehaviour:
   m_ObjectHideFlags: 0

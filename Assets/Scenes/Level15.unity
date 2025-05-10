@@ -260,7 +260,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetCamera: {fileID: 2470115421087474658}
   shakeDuration: 1
-  shakeMagnitude: 0.4
+  shakeMagnitude: 0.2
 --- !u!4 &323998017
 Transform:
   m_ObjectHideFlags: 0
@@ -288,7 +288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3677772bf52222489ef767f8e242fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intensity: 0.5
+  intensity: 0.4
   duration: 1
 --- !u!1 &541286410
 GameObject:
@@ -5446,7 +5446,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetCamera: {fileID: 2470115421087474658}
   shakeDuration: 1
-  shakeMagnitude: 0.4
+  shakeMagnitude: 0.2
 --- !u!4 &876361962
 Transform:
   m_ObjectHideFlags: 0
@@ -5474,7 +5474,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3677772bf52222489ef767f8e242fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intensity: 0.5
+  intensity: 0.4
   duration: 1
 --- !u!1 &899917307
 GameObject:
@@ -5614,7 +5614,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetCamera: {fileID: 2470115421087474658}
   shakeDuration: 1
-  shakeMagnitude: 0.4
+  shakeMagnitude: 0.2
 --- !u!4 &939171805
 Transform:
   m_ObjectHideFlags: 0
@@ -5642,7 +5642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3677772bf52222489ef767f8e242fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intensity: 0.5
+  intensity: 0.4
   duration: 1
 --- !u!1 &1045058458 stripped
 GameObject:
@@ -5681,7 +5681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetCamera: {fileID: 2470115421087474658}
   shakeDuration: 1
-  shakeMagnitude: 0.4
+  shakeMagnitude: 0.2
 --- !u!4 &1180785253
 Transform:
   m_ObjectHideFlags: 0
@@ -5709,7 +5709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3677772bf52222489ef767f8e242fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intensity: 0.5
+  intensity: 0.4
   duration: 1
 --- !u!1 &1234334702
 GameObject:
@@ -5743,7 +5743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetCamera: {fileID: 2470115421087474658}
   shakeDuration: 1
-  shakeMagnitude: 0.4
+  shakeMagnitude: 0.2
 --- !u!4 &1234334704
 Transform:
   m_ObjectHideFlags: 0
@@ -5771,7 +5771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3677772bf52222489ef767f8e242fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intensity: 0.5
+  intensity: 0.4
   duration: 1
 --- !u!50 &1258615391
 Rigidbody2D:
@@ -5832,7 +5832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetCamera: {fileID: 2470115421087474658}
   shakeDuration: 1
-  shakeMagnitude: 0.4
+  shakeMagnitude: 0.2
 --- !u!4 &1308136157
 Transform:
   m_ObjectHideFlags: 0
@@ -5860,7 +5860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3677772bf52222489ef767f8e242fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intensity: 0.5
+  intensity: 0.4
   duration: 1
 --- !u!1 &1349352094
 GameObject:
@@ -6011,16 +6011,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attacks:
-  - prefab: {fileID: 258444986968302875, guid: 404f5b8f0ac9f514db6b855176b1b275, type: 3}
-    duration: 8.2
-    direction: {x: 0, y: 0, z: 0}
   - prefab: {fileID: 3404061701457638279, guid: fe00236ed15352b41b6cc2642310f9ff, type: 3}
     duration: 8.2
     direction: {x: 0, y: 0, z: 0}
   - prefab: {fileID: 3404061701457638279, guid: fe00236ed15352b41b6cc2642310f9ff, type: 3}
     duration: 8.2
     direction: {x: 0, y: 0, z: 0}
-  initialInterval: 2
+  initialInterval: 2.4
   intervalDecrement: 0.1
   minimumInterval: 1
 --- !u!1 &1406407410
@@ -6377,7 +6374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetCamera: {fileID: 2470115421087474658}
   shakeDuration: 1
-  shakeMagnitude: 0.4
+  shakeMagnitude: 0.2
 --- !u!4 &1840089035
 Transform:
   m_ObjectHideFlags: 0
@@ -6405,7 +6402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3677772bf52222489ef767f8e242fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intensity: 0.5
+  intensity: 0.4
   duration: 1
 --- !u!1 &1859030386
 GameObject:
@@ -6490,7 +6487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetCamera: {fileID: 2470115421087474658}
   shakeDuration: 1
-  shakeMagnitude: 0.4
+  shakeMagnitude: 0.2
 --- !u!4 &2063322434
 Transform:
   m_ObjectHideFlags: 0
@@ -6518,7 +6515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3677772bf52222489ef767f8e242fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intensity: 0.5
+  intensity: 0.4
   duration: 1
 --- !u!1 &2133136755
 GameObject:
@@ -16851,6 +16848,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2470115421087474658}
     - target: {fileID: 7693747612947002542, guid: 0caed1f5955851440a159256349b2847, type: 3}
+      propertyPath: initialInterval
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693747612947002542, guid: 0caed1f5955851440a159256349b2847, type: 3}
       propertyPath: normalMusicVolume
       value: 0.4
       objectReference: {fileID: 0}
@@ -17699,7 +17700,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3838953027625418430, guid: 9a1007976c69b1847910f7a3ac0a865a, type: 3}
       propertyPath: minimumInterval
-      value: 1
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3838953027625418430, guid: 9a1007976c69b1847910f7a3ac0a865a, type: 3}
+      propertyPath: intervalDecrement
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3838953027625418430, guid: 9a1007976c69b1847910f7a3ac0a865a, type: 3}
       propertyPath: attacks.Array.size
@@ -17997,7 +18002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3d4806f7aabfb94f9a467a3fe9e568d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 300
+  health: 280
   damageSound: {fileID: 8300000, guid: 65c5f9ee0cbe48545a36596f1d5b4d5e, type: 3}
   colorFlashDuration: 0.05
   scaleChangeDuration: 0.05

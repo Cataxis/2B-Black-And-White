@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float bounds = 4.5f;
     [SerializeField] private TextMeshProUGUI pauseText;
     private bool isPaused = false;
+   
 
     void Start()
     {
@@ -73,7 +74,7 @@ public class Player : MonoBehaviour
 
     private void ReturnToMainMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Levels");
     }
 
     private void CheckWindowFocus()
