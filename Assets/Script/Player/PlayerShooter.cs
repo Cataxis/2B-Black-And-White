@@ -33,7 +33,7 @@ public class PlayerShooter : MonoBehaviour
             Shoot();
         }
 
-        if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.Joystick1Button6))
+        if (Input.GetKeyDown(KeyCode.Y) || Input.GetKeyDown(KeyCode.Joystick1Button6))
         {
             RestartScene();
         }
@@ -41,6 +41,11 @@ public class PlayerShooter : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Joystick1Button7))
         {
             // TogglePauseGame();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Joystick1Button6))
+        {
+            ReturnToMainMenu();
         }
     }
 
@@ -106,4 +111,10 @@ public class PlayerShooter : MonoBehaviour
         // Reload the scene
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    private void ReturnToMainMenu()
+    {
+        SceneManager.LoadScene("Levels");
+    }
+
 }

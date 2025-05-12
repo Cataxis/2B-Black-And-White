@@ -8,10 +8,14 @@ public class LevelSelector : MonoBehaviour
 
     void Start()
     {
+        // Crear y configurar el objeto FBPPConfig
+        FBPPConfig config = new FBPPConfig(); // Crea un objeto de configuración
+        FBPP.Start(config); // Ahora pasa el objeto de configuración a FBPP.Start()
 
         //PlayerPrefs.DeleteAll();
+        //FBPP.DeleteAll(); // Ahora puedes usarlo después de la inicialización
 
-        int levelReached = PlayerPrefs.GetInt("LevelReached", 1);
+        int levelReached = FBPP.GetInt("LevelReached", 1);
 
         for (int i = 0; i < levelButtons.Length; i++)
         {

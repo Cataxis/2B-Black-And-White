@@ -21,6 +21,10 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        // Crear y configurar el objeto FBPPConfig
+        FBPPConfig config = new FBPPConfig(); // Crea un objeto de configuración
+        FBPP.Start(config); // Ahora pasa el objeto de configuración a FBPP.Start()
+
         blocksLeft = GameObject.FindGameObjectsWithTag("Block").Length;
         Debug.Log(blocksLeft);
     }
@@ -57,10 +61,10 @@ public class GameManager : MonoBehaviour
 
     private void UnlockNextLevel(int currentLevel)
     {
-        int levelReached = PlayerPrefs.GetInt("LevelReached", 1);
+        int levelReached = FBPP.GetInt("LevelReached", 1);
         if (currentLevel >= levelReached)
         {
-            PlayerPrefs.SetInt("LevelReached", currentLevel + 1);
+            FBPP.SetInt("LevelReached", currentLevel + 1);
         }
     }
 

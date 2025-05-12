@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
             Move();
         }
 
-        if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.Joystick1Button6))
+        if (Input.GetKeyDown(KeyCode.Y))
         {
             RestartScene();
         }
@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
             TogglePauseGame();
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Joystick1Button6))
         {
             ReturnToMainMenu();
         }
